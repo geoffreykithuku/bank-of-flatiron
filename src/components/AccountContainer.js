@@ -26,7 +26,7 @@ function AccountContainer() {
       .then((data) => {
         setTransactions(data);
       })
-      .catch((err) => console.log(err + " " + "Run server first"));
+      .catch((err) => console.log(err));
   };
 
   useEffect(fetchData, [query]);
@@ -57,7 +57,7 @@ function AccountContainer() {
       .then(() => {
         fetchData();
       })
-      .catch((err) => console.log(err + " " + "Run server first"));
+      .catch((err) => console.log(err));
   }
 
   // handling search form
